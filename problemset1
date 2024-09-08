@@ -1,0 +1,18 @@
+#problemset1
+
+def truth_values(p, q):
+    conjunction = p and q  # AND
+    disjunction = p or q   # OR
+    exclusive_or = p != q  # XOR
+    conditional = (not p) or q  # p implies q (if p then q)
+    biconditional = p == q  # p if and only if q
+
+    return [conjunction, disjunction, exclusive_or, conditional, biconditional]
+
+# Ask the user for input and convert to boolean
+p = input("Enter the first value (True/False): ").strip().lower() == "true"
+q = input("Enter the second value (True/False): ").strip().lower() == "true"
+
+# Call the function and print the result
+result = truth_values(p, q)
+print(result)
