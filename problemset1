@@ -1,4 +1,4 @@
-#problemset1
+#problem1
 
 def truth_values(p, q):
     conjunction = p and q  # AND
