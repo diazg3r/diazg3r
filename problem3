@@ -1,24 +1,42 @@
 #problem3
-# problemset2
+def evaluate_statement(statement, A, B):
 
-# Read First Person
-print("First person, ")
-user_input1 = input("Enter a string // What are you?: ")
-user_input11 = input("Enter a string // What is him ")
-# Read Second Person
-print("Second person")
-user_input2 = input("Enter a string // What are you?:")
-user_input22 = input("Enter a string  // What is him?:")
+    if statement == "I am a knight":
+        return A == "knight"
+    elif statement == "I am a knave":
+        return A == "knave"
+    elif statement == "He is a knight":
+        return B == "knight"
+    elif statement == "He is a knave":
+        return B == "knave"
+    elif statement == "We are both knights":
+        return A == "knight" and B == "knight"
+    elif statement == "We are both knaves":
+        return A == "knave" and B == "knave"
+    elif statement == "We are the same kind" or statement == "We are the same type":
+        return A == B  # Both A and B are either knights or both are knaves
+    elif statement == "We are of different kinds" or statement == "We are different types":
+        return A != B  # A and B are different (one is a knight, one is a knave)
+    return False
 
-def check_inputs(user_input1, user_input11, user_input2, user_input22):
-    # Check if the first two inputs are "knight" and "knave"
-    # and the second two inputs are both "knight"
-    if (user_input1 == "knight" and user_input11 == "knave" and
-        user_input2 == "knight" and user_input22 == "knight"):
-        return True
-    else:
-        return False
+def solve_knights_and_knaves():
+    # Get input from the user for A's and B's statements
+    A_says = input("What does A say? : ")
+    B_says = input("What does B say? (Leave empty if B says nothing): ")
 
-# Example usage
-result = check_inputs(user_input1, user_input11, user_input2, user_input22)
+    # Iterate over all possible combinations of A and B being knights or knaves
+    for A in ["knight", "knave"]:
+        for B in ["knight", "knave"]:
+            # Check if A's statements are consistent
+            A_statement_correct = evaluate_statement(A_says, A, B)
+            # Check if B's statements are consistent (if B says something)
+            B_statement_correct = (B_says == "" or evaluate_statement(B_says, B, A))
+
+            # If both statements are logically consistent, return the roles
+            if A_statement_correct and B_statement_correct:
+                return f"A is a {A} and B is a {B}"
+
+    return "No solution found."
+
+result = solve_knights_and_knaves()
 print(result)
