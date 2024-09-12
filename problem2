@@ -1,1 +1,18 @@
 #problem2
+def make_function(statement):
+    def function(p, q, r):
+        return eval(statement)
+    return function
+
+def satisfied_checker(statement):
+    func = make_function(statement)
+    for p in [True, False]:
+        for q in [True, False]:
+            for r in [True, False]:
+                if func(p, q, r):
+                    return "satisfied"
+    return "not satisfied"
+
+input_statement = input("Enter a propositional statement (using p, q, and r): ")
+result = satisfied_checker(input_statement)
+print(result) 
