@@ -1,4 +1,5 @@
 #problem1.
+#Collaboration with Marrizza Alvarez
 
 def truth_values(p, q):
     conjunction = p and q  # AND
@@ -21,6 +22,8 @@ print(result)
 
 #THIS IS LIKE ANOTHER VERSION OF IT: -----------------
 
+#problem1.
+#Collaboration with Marrizza Alvarez
 
 def truth_values(p, q):
     operations = {
@@ -33,14 +36,14 @@ def truth_values(p, q):
 
     return operations
 
-# Get user input and convert to boolean
-p = input("Enter the first value (True/False): ").strip().lower() == "true"
-q = input("Enter the second value (True/False): ").strip().lower() == "true"
+# input and  boolean conversion
+p = input("Input the first value (True/False): ").strip().lower() == "true"
+q = input("Input the second value (True/False): ").strip().lower() == "true"
 
-# Call the function and print the result
+# function and pirnt 
 result = truth_values(p, q)
 
-# Print the results with description
+# results with description
 for operation, value in result.items():
     print(f"{operation}: {value}")
 
