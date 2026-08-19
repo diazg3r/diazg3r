@@ -1,4 +1,7 @@
 ## Hi there 👋
+•HEY
+•THERE
+•HOW
 
 <!--
 **diazg3r/diazg3r** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
