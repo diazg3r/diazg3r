@@ -1,9 +1,6 @@
 Now
-
 •HEY
-
 •THERE
-
 •HOW
 
 <!--
