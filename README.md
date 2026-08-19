@@ -1,6 +1,9 @@
-Now
+Now,
+
 • Building full-stack applications
+
 • Exploring cybersecurity & machine learning
+
 • Learning more about embedded systems
 
 <!--
