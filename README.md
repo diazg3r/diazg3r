@@ -1,4 +1,4 @@
-## Now,
+Now
 
 •HEY
 
