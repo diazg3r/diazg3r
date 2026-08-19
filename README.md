@@ -4,7 +4,7 @@
 * Cybersecurity & machine learning
 * Embedded systems
 
-www.linkedin.com/in/gersondiaz7780
+
 
 <!--
 **diazg3r/diazg3r** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
