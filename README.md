@@ -1,11 +1,8 @@
-Now,
+### Currently
 
-• Building full-stack applications
-
-• Exploring cybersecurity & machine learning
-
-• Learning more about embedded systems
-
+- 💻 Full-stack development
+- 🔐 Cybersecurity & machine learning
+- ⚙️ Embedded systems
 <!--
 **diazg3r/diazg3r** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
